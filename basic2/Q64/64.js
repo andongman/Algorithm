@@ -9,7 +9,7 @@ function solution(number) {
         }
     }
 
-    return res.length === 0 ? -1 : Number(res.reduce((a, b) => a > b ? a : b))
+    return res.length === 0 ? -1 : Number(res.reduce((a, b) => a < b ? a : b))
 }
 
 console.log(solution(24));
