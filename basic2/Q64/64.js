@@ -1,5 +1,5 @@
 function solution(number) {
-    let res = []
+    let res = [];
     let a = 3;
     let b = 7;
 
