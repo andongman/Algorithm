@@ -26,7 +26,6 @@ function solution2(ary1, ary2) {
     console.log(res);
 }
 
-
 const ary1 = [1, 2, 3, 4];
 const ary2 = ["a", "b", "c", "d"];
 
