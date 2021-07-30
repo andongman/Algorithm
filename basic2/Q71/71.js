@@ -1,19 +1,24 @@
 function dfs(graph, start) {
     let visited = [];
     let stack = [];
+    let n;
+    let child;
 
     stack.push(start);
 
-    while (stack.length != 0) {
-        let n = stack.pop();
-        if (!visited.includes(n)) {
-            visited.push(n);
-            let sub = graph[n].filter(v => !visited.includes(v));
-            for (let i of sub) {
-                stack.push(i);
-            }
+    while (stack.length !== 0) {
+        n = stack.pop();
+
+        visited.push(n);
+
+        child = graph[n].filter(v => !visited.includes(v)).reverse();
+
+        for (let v of child) {
+            stack.push(v);
         }
     }
+
+
     return visited;
 }
 
@@ -24,7 +29,6 @@ const graph = {
     D: ['E', 'F'],
     E: ['D', 'A'],
     F: ['D'],
-
 }
 
 
