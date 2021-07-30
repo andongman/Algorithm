@@ -3,7 +3,8 @@
 <h2>문제 : 깊이 우선 탐색</h2>
 
 <h3>내가 푼 방식</h3>
-<div>1. stack을 이용하여 stack에 노드의 자식을 집어넣는다.</div>
+<div>1. stack에 루트 노드를 집어넣는다.</div>
 <div>2. stack의 최상위 값을 꺼내서 visited 배열에 집어넣고 stack에 꺼낸 최상위 값의 자식을 집어넣는다. </div>
-<div>3. stack의 길이가 0이 되면 종료된다.</div>
+<div>3. 2번을 반복 실행한다.</div>
+<div>4. stack의 길이가 0이 되면 종료된다.</div>
  

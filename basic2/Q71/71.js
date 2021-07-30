@@ -18,7 +18,6 @@ function dfs(graph, start) {
         }
     }
 
-
     return visited;
 }
 
@@ -30,7 +29,5 @@ const graph = {
     E: ['D', 'A'],
     F: ['D'],
 }
-
-
 
 console.log(dfs(graph, 'E'));
