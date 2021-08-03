@@ -4,7 +4,6 @@ function shortPath(graph, startNode, endNode) {
     let count = -1;
     let conn, size, node;
 
-
     queue.push(startNode);
 
     while (queue.length !== 0) {
