@@ -13,3 +13,4 @@
 <h4>기억하기</h4>
 <div>원본과 사본을 만들고 싶을때 -> slice()</div>
 <div>splice() 사용법 익숙해지기</div>
+<div>splice는 원본에 반영이 되며, slice는 원본에 반영이 안된다.</div>
