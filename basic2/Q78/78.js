@@ -22,7 +22,6 @@ function solution(total, order) {
             pass--;
         }
 
-
         if (pass === order) {
             ary[idx] = -1;
             pass = 0;
