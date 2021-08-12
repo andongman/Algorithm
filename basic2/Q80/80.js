@@ -8,7 +8,7 @@ function solution(str, num) {
             recursion(str + ary[i], ary.slice(i + 1));
         }
     }
-
+    
     recursion('', ary);
 
     res = res.filter(v => v.length === num);
