@@ -8,4 +8,4 @@
 
 
 <h4>깨달은 점</h4>
-<div>ES6에 주로 사용되는 Array의 주된 함수들은 iterator를 도중에 멈추고 싶다고, for loop으로 코드를 짜는 것이 좋다.</div>
+<div>ES6에 주로 사용되는 Array의 주된 함수들은 iterator를 도중에 멈추고 싶다먄, for loop으로 코드를 짜는 것이 좋다.</div>
