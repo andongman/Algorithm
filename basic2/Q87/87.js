@@ -22,7 +22,3 @@ const dishes = [2, 1, 10, 0];
 
 console.log(solution(names, dishes));
 
-
-temp = [{ name: value }, { name: value } ...]
-let result = {};
-for (let i of temp) { result[i['name']] = i['value']; }

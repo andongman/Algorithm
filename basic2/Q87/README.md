@@ -7,7 +7,7 @@
 <div>2. 객체를 배열로 바꾼 뒤, 내림차순 정렬과 map()을 사용해 value값을 바꿔서 해결.</div>
 
 <h4>새로 배운 점</h4>
-let temp = [{ name: value }, { name: value } ,...];
+let temp = [{ name :"", value :""}, { name :"", value :""} ,...];
 let result = {};
 for (let i of temp) { result[i['name']] = i['value']; }
 <div>result[i['name']] 와 같이 사용할 수 있다.</div>
