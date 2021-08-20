@@ -12,5 +12,7 @@
 
 <h4>알게된 점</h4>
 <div>1. String.fromCharCode()는 UTF-16 코드 유닛의 시퀀스로부터 문자열을 생성해 반환.</div>
-<div>2. let a='abc'; console.log(new Set(a));   //{"a","b","c"}</div>
-<div>3. </div>
+<div>2. let a='abc';</div>
+<div>3. console.log(new Set(a));        //{"a","b","c"}</div>
+<div>4. 문자열이 포함되어 있는지 확인하는 함수  : includes(Array) , has(Set)</div>
+<div>5. a.size      //3</div>
