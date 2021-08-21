@@ -30,11 +30,9 @@ while (total_medicine.length !== 100) {
 let user_input = 'ABCDEFGH 4'.split(' ');
 let result = [];
 
-
 for (let i of total_medicine) {
     let setUserData = new Set(user_input[0]);
     let setMedicine = new Set(i);
-
 
     let intersection = new Set([...setUserData].filter(v => setMedicine.has(v)));
     if (intersection.size === Number(user_input[1])) {
