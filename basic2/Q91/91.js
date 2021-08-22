@@ -35,9 +35,7 @@ function solution() {
 
         console.log(`반 1등 점수는 ${Math.floor(stu_sum.sort((a, b) => b - a)[0] / 5)}`)
     })
-
     console.log(`전교 평균은 ${Math.floor(total_avg / 7)}입니다`)
 }
-
 
 solution();
