@@ -14,7 +14,7 @@
 <li>Array</li>
 <li>TypedArray</li>
 <li>Map</li>
-<li>Set</li>
+<li>Set</li> 
 
 <h4>iterable의 사용</h4>
 <li>for...of 루프</li>
@@ -27,6 +27,6 @@
 <div>참조타입 : 객체, 배열, 함수...</div>
 <div>원시타입은 메모리에 값을 그대로 저장하고, 참조타입은 메모리에 값을 주소로 저장한다.</div>
 
-<h4>문자열과 문자열 객체</h4>
+<h4>문자열과 문자열 객체</h4>//공통 값이 없고 메모리가 비어있는 경우
 <div>let str1 = '문자열';</div>
 <div>let str2 = new String('문자열');</div>
