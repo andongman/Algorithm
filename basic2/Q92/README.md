@@ -14,7 +14,7 @@
 <li>Array</li>
 <li>TypedArray</li>
 <li>Map</li>
-<li>Set</li> 
+<li>Set</li>
 
 <h4>iterable의 사용</h4>
 <li>for...of 루프</li>
