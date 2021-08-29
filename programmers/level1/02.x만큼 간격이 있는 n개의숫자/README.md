@@ -1,0 +1,8 @@
+문제 푼 날짜 : 2021.8.29
+
+<h2>문제 : x만큼 간격이 있는 n개의 숫자</h2>
+
+<h3>내가 푼 방식</h3>
+<div>1. 간단한 로직이기에 생략.</div>
+
+https://programmers.co.kr/learn/courses/30/lessons/12954
