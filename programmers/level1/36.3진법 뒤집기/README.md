@@ -8,7 +8,7 @@
 <h3>알게된 점</h3>
 <div>1. num.toString(3).split("")</div>
 <div>2. [...num.toString(3)]</div>
-<Div>3. spread operator에 익숙해보자!</Div>
+<div>3. spread operator에 익숙해보자!</div>
 <br>
 
 https://programmers.co.kr/learn/courses/30/lessons/68935
