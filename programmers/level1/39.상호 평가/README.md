@@ -6,7 +6,7 @@
 <div>1. 간단한 로직이기에 생략.</div>
 
 <h3>알게 된 점</h3>
-<div>1. Math.min([...ary])</div>
+<div>1. Math.min(...ary)</div>
 <div>2. Math.min.apply(null,ary)</div>
 
 <br>
