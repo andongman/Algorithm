@@ -1,8 +1,8 @@
 function solution(nums) {
     let ary = [];
 
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
+    for (let i = 0; i < nums.length - 2; i++) {
+        for (let j = i + 1; j < nums.length - 1; j++) {
             for (let k = j + 1; k < nums.length; k++) {
                 ary.push(nums[i] + nums[j] + nums[k]);
             }
