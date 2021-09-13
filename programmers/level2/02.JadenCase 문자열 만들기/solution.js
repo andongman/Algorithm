@@ -11,3 +11,8 @@ function solution(s) {
     }
     return answer;
 }
+
+// 기존의 풀이법
+// function solution(s) {
+//     return s.split(" ").map(v => v[0].toUpperCase() + v.slice(1).toLowerCase()).join(" ");
+// }
