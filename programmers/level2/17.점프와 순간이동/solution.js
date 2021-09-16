@@ -7,4 +7,4 @@ function solution(n) {
         n = Math.floor(n / 2);
     }
     return count;
-} ㅇ
+} 
