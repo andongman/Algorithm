@@ -11,7 +11,6 @@
 <h3>알게된 점</h3>
 <div>1. Set() 객체는 add할때 하나씩 만 가능하다.</div>
 <div>2. mySet.add(1).add(2) 이런식으로 가능하다.</div>
-<div>3.</div>
 
 <br>
 https://programmers.co.kr/learn/courses/30/lessons/86048
