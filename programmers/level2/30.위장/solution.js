@@ -14,4 +14,4 @@ function solution(clothes) {
         answer *= ary[i].length + 1;
     }
     return answer - 1;
-}
+} 
