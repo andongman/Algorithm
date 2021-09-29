@@ -1,6 +1,7 @@
 function solution(s) {
     let replica = s.slice(1, s.length - 1).split("");
     let ary = [];
+    let result = [];
 
     while (replica.length) {
         let leftBracket = replica.indexOf("{");
@@ -13,14 +14,12 @@ function solution(s) {
 
         ary.push(unit);
     }
-    ary.sort((a, b) => a.length - b.length);
-    let result = [];
-
-    ary.map(ele => {
+    ary.sort((a, b) => a.length - b.length).map(ele => {
         ele.map(v => {
             if (!(result.includes(v))) result.push(v);
         })
     })
+
     return result;
 }
 
