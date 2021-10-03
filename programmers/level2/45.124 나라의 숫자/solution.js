@@ -11,7 +11,7 @@ function solution(n) {
         if (remainder === 0) quotient -= 1;
         if (quotient === 0) break;
 
-        n = quotient; x
+        n = quotient;
     }
     return answer.reverse().join("");
 }
