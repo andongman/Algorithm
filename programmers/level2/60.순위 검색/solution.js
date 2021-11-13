@@ -1,66 +1,54 @@
 function solution(info, query) {
-    const answer = [];
-    const infoMap = {};
+    let set={};
     
-    function combination(array, score, start) {
-        const key = array.join("");
-        const value = infoMap[key];
-        
-        if (value) {
-            infoMap[key].push(score);
-        } else {  
-            infoMap[key] = [score];
-        }
-        
-        for (let i = start; i < array.length; i++) {
-            const temp = [...array];
-            temp[i] = "-";
-            combination(temp, score, i + 1);
-        }
-    }
-    
-    for (const e of info) {
-        const splited = e.split(" ");
-        const score = Number(splited.pop());
-        combination(splited, score, 0);
+    for(let i=0; i<info.length; i++){
+        let slicing= info[i].split(" ");
+        let score= +slicing.pop();
+        combination(slicing, score, 0);
     }
 
-    
-    for (const key in infoMap) {
-        infoMap[key] = infoMap[key].sort((a, b) => a - b);
-    }
-    
-    for (const e of query) {
-        const splited = e.replace(/ and /g, " ").split(" ");
-        const score = Number(splited.pop());
-        const key = splited.join("");
-        const array = infoMap[key];
+    function combination(ary, score, start){
+        let str= ary.join("");
         
-        if (array) {
-            let start = 0;
-            let end = array.length;
-            while (start < end) {
-                const mid = Math.floor((start + end) / 2);
-                
-                if (array[mid] >= score) {
-                    end = mid;
-                } else if (array[mid] < score) {
-                    start = mid + 1;
-                }
+        if(set[str]) set[str].push(score);
+        else set[str]=[score];
+
+        for(let i=start; i<ary.length; i++){
+            let replica= ary.slice();
+            replica[i]= "-";
+            combination(replica, score, i+1);
+        }
+    }
+
+    for(let value of Object.values(set)){
+        value= value.sort((a,b)=> a-b);
+    }
+
+    let result=[];
+
+    for(let i=0; i<query.length; i++){
+        let slicing= query[i].replace(/and /g,"").split(" ");
+
+        let score= +slicing.pop();
+        let str= slicing.join("");
+        
+        let score_board= set[str];
+
+        if(score_board){
+            let startIdx= 0;
+            let endIdx= score_board.length-1;
+
+            // 핵심 코드
+            while(startIdx<=endIdx){
+                let mid= Math.floor((startIdx+endIdx)/2);
+
+                if(score_board[mid]>=score) endIdx=mid-1;
+                else startIdx=mid+1;
             }
-            
-            const result = array.length - start;
-            answer.push(result);
-        } else {
-            answer.push(0);
+            result.push(score_board.length - startIdx);
+        }else{
+            result.push(0);
         }
     }
-    
-    return answer;
+    return result;
 }
-
-let info=["java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"];
-let query= ["java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150"];
-
-
-console.log(solution(info, query));     //[1,1,1,1,2,4]
