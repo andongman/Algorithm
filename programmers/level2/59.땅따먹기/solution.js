@@ -18,3 +18,4 @@ function solution(land) {
 
     return Math.max(...distance);
 }
+
